@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#100d2b" />
+  <title>For You 💗</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="background-glow" aria-hidden="true"></div>
+  <main class="page">
+    <p class="eyebrow">A LITTLE SOMETHING FOR YOU</p>
+    <h1>For my favorite person <span>♡</span></h1>
+    <p class="subtitle">Take your time, love. I made this just for you.</p>
+
+    <section class="choices" aria-label="Choose what to open">
+      <button class="choice choice-video" id="openVideo" type="button">
+        <span class="choice-icon" aria-hidden="true">▶</span>
+        <span>Manood ka muna</span>
+      </button>
+      <button class="choice choice-message" id="openMessage" type="button">
+        <span class="choice-icon" aria-hidden="true">♡</span>
+        <span>Basahin mo kaya to</span>
+      </button>
+    </section>
+
+    <hi><p class="hint">Pili ka kahit saan jan</p></hi>
+  </main>
+
+  <!-- VIDEO MODAL: replace the placeholder with your video when you're ready. -->
+  <div class="modal" id="videoModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close="video"></div>
+    <section class="modal-card video-card" role="dialog" aria-modal="true" aria-labelledby="videoTitle">
+      <button class="close-button" type="button" aria-label="Close video" data-close="video">×</button>
+      <p class="modal-kicker">A LITTLE VIDEO FOR YOU</p>
+      <h2 id="videoTitle">Manood and makinig ka sa kalokohan ko HAHAHAHA </h2>
+
+      <!-- VIDEO GOES HERE:
+           Replace the .video-placeholder below with the <video> example in README.txt.
+           Put your video file in this same folder, or update the src path. -->
+      <video class="your-video-class" controls playsinline preload="metadata">
+  <source src="monthsary namin.mp4" type="video/mp4">
+</video>
+    </section>
+  </div>
+
+  <!-- MESSAGE MODAL: replace the placeholder text with your own message. -->
+  <div class="modal" id="messageModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close="message"></div>
+    <section class="modal-card message-card" role="dialog" aria-modal="true" aria-labelledby="messageTitle">
+      <button class="close-button" type="button" aria-label="Close message" data-close="message">×</button>
+      <p class="modal-kicker">WORDS FROM MY HEART</p>
+      <h2 id="messageTitle">Para sayo to lablab ♡</h2>
+
+      <!-- MESSAGE GOES HERE: replace the sample placeholder below with your own words. -->
+      <div class="message-content" id="messageContent">
+        <p class="message-placeholder">hi labii
+
+happy monthsary po,, biruin mo no umabot tayo 2years and 10months
+tas nalagpasan natin mga pagsubok natin na dumaan, mga problems
+na nalutas natin together and mga away na na fix natin.. marami pa tayong pag dadaanan lablab
+pero kaya natin yann basta we stay together helping each other, balang araw makakamit din
+natin mga pangarap natin.. gaya nga ng sabi ni Sir Geybin "walang sarap kung walang hirap".
+anyways super thankyouu sa pag intindi sakin thankyouu din kasi lagi ka nanjan for me pag
+may dinaramdam ako, you always make me feel better, and thank youu for not letting go Kahit
+may times na nagging toxic tayo non but you choose to stay.. and im super thankful to have
+you in my life.. and I hope we stay together reaching for our dreams, we stay together even
+we fight... and ito pa WAG NA WAG KANG LILIKO BABARILIN KO TALAGA MAGIGING LALAKE MO!!! 
+HAHAHAHHHAHAH. but I will try my best to be the best boyfriend you ever had, to be the best man
+you ever had, and to be the best person you've ever met... and thankyouu sa kapatid mo kung di sakanya
+di tayo ganto HAHHAHAHH. Ayun lang poo once again happy monthsary labiii iloveyouu so muchhh po.
+
+best regards, your poging boyfriend
+KINS LEBRERO ♡</p>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
